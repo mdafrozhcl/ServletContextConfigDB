@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Registration</title>
+<style type="text/css">
+a {
+	text-decoration: blink;
+	font-weight: 200;
+	font-style: italic;
+	font-stretch: condensed;
+	color: orange;
+}
+
+th {
+	text-align: right;
+	width: 250px;
+}
+
+td {
+	width: 250px;
+}
+
+.para {
+	text-indent: 50px;
+	float: left;
+	margin-left: 10px;
+}
+
+div {
+	border: thin;
+	border-style: solid;
+	border-color: maroon;
+	top: 20px;
+	width: 380px;
+	padding: 50px;
+	margin-top: 10px
+}
+</style>
+</head>
+<body>
+	<div class="para">This program is an example of Database
+		connection using servlet context, reading the below form,
+		PreparedStatement, ResultSet, Enumberation and so forth in Oracle 11g
+		release 2.</div>
+	<div class="para">It is another para.</div>
+	<div class="para">sample para</div>
+	<div class="para"
+		style="margin-top: -60px; padding-left: 0px; padding-top: 0px; width: 430px;">
+		<form action="/ServletContextConfigDB/DatabaseDemo">
+			<table border="1">
+				<caption>Employee Registration</caption>
+				<tr>
+					<th>Employee First Name:</th>
+					<td><input type="text" name="empfirstname" required="required"
+						size="29" /></td>
+				</tr>
+				<tr>
+					<th>Employee Last Name:</th>
+					<td><input type="text" name="emplastname" required="required"
+						size="29" /></td>
+				</tr>
+				<tr>
+					<th>Employee DOB:</th>
+					<td><select name="dobmonth" required="required">
+							<option>Months</option>
+							<option value="01">January</option>
+							<option value="02">February</option>
+							<option value="03">March</option>
+							<option value="04">April</option>
+							<option value="05">May</option>
+							<option value="06">June</option>
+							<option value="07">July</option>
+							<option value="08">August</option>
+							<option value="09">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+					</select>&nbsp;&nbsp; <input name="dobday" type="text" min="1" max="31"
+						size="3" placeholder="Day" required="required" />&nbsp;&nbsp; <input
+						name="dobyear" type="text" min="1930" max="2010" size="3"
+						placeholder="Year" required="required" /></td>
+				</tr>
+				<tr>
+					<th>Employee Role:</th>
+					<td><select name="emprole">
+							<option>Role</option>
+							<optgroup label="Database">
+								<option value="Database developer">Database developer</option>
+								<option value="Database Admin">Database administrator</option>
+							</optgroup>
+							<optgroup label="Software">
+								<option value="web developer">UI designer</option>
+								<option value="Java developer">Java developer</option>
+								<option value="Java architect">Java architect</option>
+							</optgroup>
+							<optgroup label="Network">
+								<option value="Network Engineer">Network administrator</option>
+								<option value="Network Architect">Network architect</option>
+							</optgroup>
+							<optgroup label="Business">
+								<option value="Business Analyst">Business analyst</option>
+								<option value="Account Manager">Account manager</option>
+							</optgroup>
+					</select></td>
+				</tr>
+				<tr>
+					<th>Salary
+					</th>
+					<td><input type="text" name="salary" /></td>
+				</tr>
+				<tr align="center">
+					<td colspan="2"><input type="submit" value="submit"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div class="para"></div>
+</body>
+</html>
